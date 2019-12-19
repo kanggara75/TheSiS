@@ -8,7 +8,7 @@
 </a>
 
 
-A6-ESP8266-breakout
+A6 || ESP32 || GPS ||
 ===================
 
 This is a breakout board that includes an ESP8266 and an integrated A6 module.
