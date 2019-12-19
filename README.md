@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://raw.githubusercontent.com/teuinsuska/app/master/img/clients/logo.png">
-    <img src="https://raw.githubusercontent.com/teuinsuska/app/master/img/clients/logo.png" width="150">
+  <a href="Projects/Sketch/images/logo.png">
+    <img src="Projects/Sketch/images/logo.png" width="150">
   </a>
 </p>
 
