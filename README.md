@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://raw.githubusercontent.com/teuinsuska/app/master/img/clients/logo.png">
+    <img src="https://raw.githubusercontent.com/teuinsuska/app/master/img/clients/logo.png" width="150">
+  </a>
+</p>
+
+
 A6-ESP8266-breakout
 ===================
 
