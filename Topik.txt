@@ -1,0 +1,3 @@
+1. Melanjutkan Promin (Sistem keamanan sepeda motor berbasis sms) menjadi IoT dan android
+2. Membuat PLC sendiri
+3.
