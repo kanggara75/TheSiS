@@ -1,11 +1,10 @@
 <p align="center">
-  <a href="Projects/Sketch/images/logo.png">
+    <a href=https://kanggara75.wordpress.com/> 
     <img src="Projects/Sketch/images/logo.png" width="150">
-  </a>
+    </a>
 </p>
 
-<a href=https://kanggara75.wordpress.com/>
-<h1 align=center>KAnggara75</h1>
+<a href=https://kanggara75.wordpress.com/> <h1 align=center>KAnggara75</h1>
 </a>
 
 
