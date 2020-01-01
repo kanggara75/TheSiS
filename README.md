@@ -26,4 +26,4 @@ It is still incomplete, and looks like this:
 
 
 ## Android App Link
-<a href=https://kanggara75.wordpress.com/> <h3 align=center>Android App Link</h3></a>
+<a href=https://github.com/kanggara75/TheSiS_App/> <h3 align=center>Android App Link</h3></a>
