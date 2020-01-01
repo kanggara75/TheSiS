@@ -1,11 +1,10 @@
 <p align="center">
-    <a href=https://kanggara75.wordpress.com/> 
-    <img src="Projects/Sketch/images/logo.png" width="150">
+    <a href=https://kanggara75.wordpress.com/> <img src="Projects/Sketch/images/logo.png" width="150">
     </a>
 </p>
 
-<a href=https://kanggara75.wordpress.com/> <h1 align=center>KAnggara75</h1>
-</a>
+<a href=https://kanggara75.wordpress.com/> <h1 align=center>KAnggara75</h1></a>
+
 
 
 A6 || ESP32 || GPS ||
@@ -24,3 +23,7 @@ It is still incomplete, and looks like this:
 ## Board
 
 <img src="Projects/Sketch/images/board.png" />
+
+
+## Android App Link
+<a href=https://kanggara75.wordpress.com/> <h3 align=center>Android App Link</h3></a>
