@@ -9349,8 +9349,8 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <part name="SUPPLY22" library="supply2" deviceset="VCC" device=""/>
 <part name="IC3" library="TP4056" deviceset="TP4056" device=""/>
 <part name="U$5" library="DW01A" deviceset="DW01A" device=""/>
-<part name="LED2" library="led" deviceset="LED" device="" value="Blue"/>
-<part name="LED3" library="led" deviceset="LED" device="" value="Red"/>
+<part name="LED2" library="led" deviceset="LED" device="SMT1206" value="Blue"/>
+<part name="LED3" library="led" deviceset="LED" device="SMT1206" value="Red"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="T1" library="FS8205A" deviceset="DMN3024LSD" device=""/>

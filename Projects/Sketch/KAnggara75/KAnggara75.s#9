@@ -9354,6 +9354,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="T1" library="FS8205A" deviceset="DMN3024LSD" device=""/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="1.2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -10358,7 +10359,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <instance part="SUPPLY22" gate="G$1" x="121.92" y="149.86" smashed="yes" rot="R270">
 <attribute name="VALUE" x="125.095" y="150.495" size="1.778" layer="96"/>
 </instance>
-<instance part="IC3" gate="G$1" x="38.1" y="96.52"/>
+<instance part="IC3" gate="G$1" x="40.64" y="96.52"/>
 <instance part="U$5" gate="G$1" x="93.98" y="104.14" rot="MR0"/>
 <instance part="LED2" gate="G$1" x="15.24" y="91.44" rot="R180"/>
 <instance part="LED3" gate="G$1" x="25.4" y="91.44" rot="R180"/>
@@ -10366,6 +10367,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <instance part="R12" gate="G$1" x="25.4" y="104.14" rot="R90"/>
 <instance part="T1" gate="A" x="81.28" y="78.74" rot="R270"/>
 <instance part="T1" gate="B" x="91.44" y="78.74" rot="MR270"/>
+<instance part="R13" gate="G$1" x="27.94" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10395,14 +10397,19 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
-<wire x1="33.02" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="88.9" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="88.9" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 <label x="20.32" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="30.48" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="TEMP"/>
-<wire x1="33.02" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="93.98" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<junction x="30.48" y="88.9"/>
+<wire x1="27.94" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="93.98" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<junction x="33.02" y="88.9"/>
+<pinref part="T1" gate="A" pin="S"/>
+<wire x1="76.2" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<junction x="27.94" y="78.74"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10487,7 +10494,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <wire x1="15.24" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
 <label x="7.62" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="IC3" gate="G$1" pin="VCC"/>
-<wire x1="33.02" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 <junction x="15.24" y="86.36"/>
 <junction x="25.4" y="86.36"/>
 </segment>
@@ -10510,20 +10517,20 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="IC3" gate="G$1" pin="STDBY"/>
-<wire x1="60.96" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="88.9" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="88.9" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="114.3" x2="15.24" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="CHRG"/>
-<wire x1="60.96" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="91.44" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="91.44" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="109.22" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -10546,6 +10553,14 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <wire x1="93.98" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="OD"/>
 <wire x1="88.9" y1="83.82" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="PROG"/>
+<wire x1="35.56" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="91.44" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

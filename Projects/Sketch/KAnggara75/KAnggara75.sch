@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9588,8 +9589,12 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <instance part="SUPPLY16" gate="PE" x="571.5" y="144.78" smashed="yes">
 <attribute name="VALUE" x="567.055" y="140.081" size="1.778" layer="96"/>
 </instance>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U$3" gate="G$1" x="596.9" y="294.64"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="U$3" gate="G$1" x="596.9" y="294.64" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10327,10 +10332,23 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <plain>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$2" gate="G$1" x="27.94" y="157.48"/>
-<instance part="IC2" gate="G$1" x="15.24" y="144.78"/>
-<instance part="X2" gate="G$1" x="99.06" y="165.1" rot="R90"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="U$2" gate="G$1" x="27.94" y="157.48" smashed="yes">
+<attribute name="NAME" x="12.7" y="170.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="12.7" y="167.64" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="G$1" x="15.24" y="144.78" smashed="yes">
+<attribute name="NAME" x="17.78" y="137.16" size="1.778" layer="95"/>
+<attribute name="VALUE" x="17.78" y="134.62" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="G$1" x="99.06" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.63" y="162.56" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="106.68" y="173.99" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
 <instance part="SUPPLY17" gate="G$1" x="91.44" y="154.94" smashed="yes" rot="R90">
 <attribute name="VALUE" x="88.265" y="153.035" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -10365,21 +10383,63 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <instance part="SUPPLY22" gate="G$1" x="121.92" y="149.86" smashed="yes" rot="R270">
 <attribute name="VALUE" x="125.095" y="150.495" size="1.778" layer="96"/>
 </instance>
-<instance part="IC3" gate="G$1" x="40.64" y="96.52"/>
-<instance part="U$5" gate="G$1" x="93.98" y="106.68" rot="MR0"/>
-<instance part="LED2" gate="G$1" x="15.24" y="91.44" rot="R180"/>
-<instance part="LED3" gate="G$1" x="25.4" y="91.44" rot="R180"/>
-<instance part="R11" gate="G$1" x="15.24" y="104.14" rot="R90"/>
-<instance part="R12" gate="G$1" x="25.4" y="104.14" rot="R90"/>
-<instance part="T1" gate="A" x="81.28" y="83.82" rot="R270"/>
-<instance part="T1" gate="B" x="91.44" y="83.82" rot="MR270"/>
-<instance part="R13" gate="G$1" x="33.02" y="83.82" rot="R90"/>
-<instance part="C10" gate="G$1" x="22.86" y="83.82"/>
-<instance part="R14" gate="G$1" x="73.66" y="93.98" rot="R90"/>
-<instance part="C11" gate="G$1" x="106.68" y="106.68"/>
-<instance part="R15" gate="G$1" x="116.84" y="109.22" rot="R180"/>
-<instance part="C12" gate="G$1" x="121.92" y="91.44"/>
-<instance part="JP2" gate="G$1" x="7.62" y="66.04" rot="R180"/>
+<instance part="IC3" gate="G$1" x="40.64" y="96.52" smashed="yes">
+<attribute name="NAME" x="40.64" y="96.52" size="1.27" layer="95"/>
+<attribute name="VALUE" x="40.64" y="81.28" size="1.27" layer="96"/>
+</instance>
+<instance part="U$5" gate="G$1" x="93.98" y="106.68" smashed="yes" rot="MR0"/>
+<instance part="LED2" gate="G$1" x="15.24" y="91.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.684" y="96.012" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="9.525" y="96.012" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="LED3" gate="G$1" x="25.4" y="91.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.844" y="96.012" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="19.685" y="96.012" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R11" gate="G$1" x="15.24" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.7414" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="100.33" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R12" gate="G$1" x="25.4" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.9014" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.702" y="100.33" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="T1" gate="A" x="81.28" y="83.82" smashed="yes" rot="R270">
+<attribute name="VALUE" x="81.28" y="81.28" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="83.82" y="81.28" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="T1" gate="B" x="91.44" y="83.82" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="91.44" y="81.28" size="1.778" layer="96" rot="MR270"/>
+<attribute name="NAME" x="88.9" y="81.28" size="1.778" layer="95" rot="MR270"/>
+</instance>
+<instance part="R13" gate="G$1" x="33.02" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.5214" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="36.322" y="80.01" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C10" gate="G$1" x="22.86" y="83.82" smashed="yes">
+<attribute name="NAME" x="24.384" y="84.201" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="79.121" size="1.778" layer="96"/>
+</instance>
+<instance part="R14" gate="G$1" x="73.66" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.1614" y="90.17" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="76.962" y="90.17" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C11" gate="G$1" x="106.68" y="106.68" smashed="yes">
+<attribute name="NAME" x="108.204" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="108.204" y="101.981" size="1.778" layer="96"/>
+</instance>
+<instance part="R15" gate="G$1" x="116.84" y="109.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="120.65" y="107.7214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="120.65" y="112.522" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C12" gate="G$1" x="121.92" y="91.44" smashed="yes">
+<attribute name="NAME" x="123.444" y="91.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="123.444" y="86.741" size="1.778" layer="96"/>
+</instance>
+<instance part="JP2" gate="G$1" x="7.62" y="66.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="60.325" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="13.97" y="71.12" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10646,6 +10706,17 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <label x="20.32" y="63.5" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<description>KL</description>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>

@@ -9360,6 +9360,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10378,6 +10379,7 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <instance part="C11" gate="G$1" x="106.68" y="106.68"/>
 <instance part="R15" gate="G$1" x="116.84" y="109.22" rot="R180"/>
 <instance part="C12" gate="G$1" x="121.92" y="91.44"/>
+<instance part="JP2" gate="G$1" x="7.62" y="66.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10489,6 +10491,11 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="88.9" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<label x="20.32" y="66.04" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10632,6 +10639,11 @@ Dave.Calaway &lt;a href="https://goo.gl/Muy1Tr"&gt;Eagle Library&lt;/a&gt;</desc
 <wire x1="121.92" y1="86.36" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
 <label x="124.46" y="78.74" size="1.778" layer="95" xref="yes"/>
 <junction x="121.92" y="78.74"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="63.5" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+<label x="20.32" y="63.5" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
