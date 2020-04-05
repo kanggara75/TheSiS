@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\TheSiS_Web"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TheSiS_Web"
+	}
 }
