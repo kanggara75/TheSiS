@@ -11,6 +11,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "TheSiS_Web"
+		"liveServer.settings.multiRootWorkspaceName": "TheSiS_Web",
+		"java.configuration.updateBuildConfiguration": "automatic"
 	}
 }
