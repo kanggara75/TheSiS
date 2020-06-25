@@ -1,0 +1,6 @@
+1. Menambahkan Landasan Teori Bahasa Pemrograman Java (Sub Bab 2.9)
+2. Mempersingkat waktu presentasi 7-10 menit saja
+
+
+
+https://192.168.43.15/TheSiS_Web/menu/submenu?title=test&menu_id=1&url=test&icon=test&title=test&is_active=1
