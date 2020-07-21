@@ -1,6 +1,11 @@
-1. Menambahkan Landasan Teori Bahasa Pemrograman Java (Sub Bab 2.9)
-2. Mempersingkat waktu presentasi 7-10 menit saja
+1. Penggunaan selenoid pada pengamanan cakram sepeda motor perlu ditinjau ulang karena dapat mengakibatkan kecelakaan apabila terjadi kesalahan/error pada sistem
+2. Prinsip kerja dari selenoid ialah menarik 
 
 
 
-https://192.168.43.15/TheSiS_Web/menu/submenu?title=test&menu_id=1&url=test&icon=test&title=test&is_active=1
+
+
+================================================
+Revisi 20 Juli 2020
+1. Security => Seafty
+2. 
