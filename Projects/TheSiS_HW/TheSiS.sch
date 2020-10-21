@@ -14913,7 +14913,7 @@ Grid 5.08 mm&lt;p&gt;
 <part name="S1" library="switch-dil" library_urn="urn:adsk.eagle:library:375" deviceset="DIP04S" device="" package3d_urn="urn:adsk.eagle:package:27250/2"/>
 <part name="S2" library="switch-dil" library_urn="urn:adsk.eagle:library:375" deviceset="DIP08S" device="" package3d_urn="urn:adsk.eagle:package:27257/2"/>
 <part name="U$1" library="DW01A" deviceset="DW01A" device=""/>
-<part name="U$2" library="diy-modules" deviceset="BATTERY-LI-MH12210" device=""/>
+<part name="18650" library="diy-modules" deviceset="BATTERY-LI-MH12210" device=""/>
 <part name="T1" library="FS8205A" deviceset="DMN3024LSD" device=""/>
 <part name="IC3" library="TP4056" deviceset="TP4056" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -15065,7 +15065,7 @@ Grid 5.08 mm&lt;p&gt;
 <attribute name="VALUE" x="138.43" y="78.74" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$1" gate="G$1" x="63.5" y="55.88" smashed="yes" grouprefs="POWER_SUPPLY"/>
-<instance part="U$2" gate="G$1" x="109.22" y="48.26" smashed="yes" rot="R90" grouprefs="POWER_SUPPLY">
+<instance part="18650" gate="G$1" x="109.22" y="48.26" smashed="yes" rot="R90" grouprefs="POWER_SUPPLY">
 <attribute name="NAME" x="96.52" y="33.02" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.06" y="33.02" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -15755,7 +15755,7 @@ Grid 5.08 mm&lt;p&gt;
 </net>
 <net name="BAT-" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="BAT-"/>
+<pinref part="18650" gate="G$1" pin="BAT-"/>
 <wire x1="109.22" y1="27.94" x2="109.22" y2="25.4" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <label x="111.76" y="25.4" size="1.778" layer="95" rot="R90" grouprefs="POWER_SUPPLY"/>
 </segment>
@@ -15834,18 +15834,6 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="40.64" y1="35.56" x2="40.64" y2="30.48" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <label x="43.18" y="30.48" size="1.778" layer="95" rot="R90" grouprefs="POWER_SUPPLY"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="VIN"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
-<wire x1="22.86" y1="119.38" x2="22.86" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
-<junction x="22.86" y="121.92" grouprefs="LDO_REGULATOR"/>
-<pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="27.94" y1="127" x2="27.94" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
-<junction x="27.94" y="121.92" grouprefs="LDO_REGULATOR"/>
 </segment>
 <segment>
 <label x="38.1" y="228.6" size="1.778" layer="95" grouprefs="PROGRAMING_INTERFACE"/>
@@ -16609,7 +16597,7 @@ Grid 5.08 mm&lt;p&gt;
 </net>
 <net name="BAT_VCC" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="BAT+"/>
+<pinref part="18650" gate="G$1" pin="BAT+"/>
 <label x="109.22" y="78.74" size="1.778" layer="95" rot="R270"/>
 <pinref part="S2" gate="-7" pin="2"/>
 <wire x1="109.22" y1="83.82" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
@@ -16749,6 +16737,21 @@ Grid 5.08 mm&lt;p&gt;
 <segment>
 <pinref part="U$4" gate="G$1" pin="RXD"/>
 <pinref part="S2" gate="-3" pin="2"/>
+</segment>
+</net>
+<net name="EXT5V" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VIN"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
+<wire x1="22.86" y1="119.38" x2="22.86" y2="121.92" width="0.1524" layer="91" grouprefs="LDO_REGULATOR"/>
+<junction x="22.86" y="121.92" grouprefs="LDO_REGULATOR"/>
+<label x="30.48" y="121.92" size="1.778" layer="95" rot="R270"/>
+<pinref part="D1" gate="G$1" pin="K"/>
+<wire x1="27.94" y1="127" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
+<junction x="27.94" y="121.92"/>
 </segment>
 </net>
 </nets>
