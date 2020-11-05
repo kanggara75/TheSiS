@@ -132,10 +132,7 @@ CREATE TABLE `kuisioner` (
 --
 
 INSERT INTO `kuisioner` (`no`, `time`, `name`, `jk`, `usia`, `motor`, `A1`, `A2`, `A3`, `A4`, `A5`, `B1`, `B2`, `B3`, `B4`, `B5`, `C1`, `C2`, `C3`, `C4`, `C5`) VALUES
-(1, 1590980342, 'Kelvin Anggara', 1, 1, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4),
-(2, 1590980463, 'Kelvin Anggara gtg', 2, 18, 2, 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5),
-(3, 1591006043, 'kak', 1, 1111, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4),
-(4, 1591006119, 'kak', 1, 1111, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4);
+(1, 1590980342, 'Kelvin Anggara', 1, 1, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4);
 
 -- --------------------------------------------------------
 
@@ -180,9 +177,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'Kelvin Anggara', 'kanggara75@gmail.com', 'LogoKA20201.jpg', '$2y$10$qMINsDbz7WvhH8yjUgggPe6ntn8E7dDGNEikCz5cWY11q0q7tk5uO', 1, 1, 1586930611),
-(5, 'KAnggara', 'KAnggara75@yandex.com', 'default1.jpg', '$2y$10$fn/jTUfEs57jxzaA9NZQf.nw7XrL0yXtH/pLWaMbK14oZ2qa97h/q', 2, 1, 1587031472),
-(6, 'Kelvin', 'kanggara751@gmail.com', 'default.jpg', '$2y$10$S0gRqy2qaoS9PoHQW0YfTuoLnxfZLBa3CPnCbD93DNj8ZP5ANXdsO', 2, 1, 1590979986);
+(0, 'Kelvin Anggara', 'kanggara75@gmail.com', 'LogoKA20201.jpg', '$2y$10$qMINsDbz7WvhH8yjUgggPe6ntn8E7dDGNEikCz5cWY11q0q7tk5uO', 1, 1, 1586930611),
+(1, 'KAnggara', 'KAnggara75@yandex.com', 'default1.jpg', '$2y$10$fn/jTUfEs57jxzaA9NZQf.nw7XrL0yXtH/pLWaMbK14oZ2qa97h/q', 2, 1, 1587031472);
 
 -- --------------------------------------------------------
 
