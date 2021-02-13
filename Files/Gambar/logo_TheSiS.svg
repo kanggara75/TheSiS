@@ -8,49 +8,17 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="logo_TheSiS.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    id="svg8"
    version="1.1"
    viewBox="0 0 52.253246 63.01918"
    height="63.01918mm"
-   width="52.253246mm">
+   width="52.253246mm"
+   inkscape:export-filename="D:\TheSiS_App_Flutter\assets\icon\ic_logo.png"
+   inkscape:export-xdpi="688.367"
+   inkscape:export-ydpi="688.367">
   <defs
-     id="defs2">
-	
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</defs>
+     id="defs2" />
   <sodipodi:namedview
      fit-margin-bottom="0"
      fit-margin-right="0"
@@ -70,9 +38,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="119.09136"
-     inkscape:cx="152.10695"
-     inkscape:zoom="1"
+     inkscape:cy="123.5164"
+     inkscape:cx="182.26418"
+     inkscape:zoom="2"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -208,7 +176,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -217,8 +185,19 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
+    <circle
+       style="fill:#cccccc;stroke-width:0.409649;stroke-dasharray:1.6386, 0.81929900000000000;fill-opacity:1"
+       id="path69"
+       cx="30.642126"
+       cy="53.018185"
+       r="32.5"
+       inkscape:export-xdpi="688.367"
+       inkscape:export-ydpi="688.367" />
     <g
-       id="g1551">
+       id="g1551"
+       transform="matrix(1.031432,0,0,1.031432,0.05839732,-0.64492571)"
+       inkscape:export-xdpi="688.367"
+       inkscape:export-ydpi="688.367">
       <path
          d="M 87.073145,8.6041384 A 27.806376,27.806376 0 0 1 65.785945,35.635507 27.806376,27.806376 0 0 1 34.517222,21.279091 27.806376,27.806376 0 0 1 41.142582,-12.483971"
          transform="rotate(52.062739)"
